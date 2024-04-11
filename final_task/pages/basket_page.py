@@ -9,4 +9,5 @@ class BasketPage(BasePage):
 
     def should_be_text_that_a_basket_is_empty(self):
         x = self.browser.find_element(*BasketPageLocators.BASKET_EMPTY_TEXT).text
-        assert x == "Your basket is empty. Continue shopping", f"Wrong text, got '{x}' instead of 'Your basket is empty. Continue shopping'"
+        assert x == "Your basket is empty. Continue shopping", \
+            f"Wrong text, got '{x}' instead of 'Your basket is empty. Continue shopping'"
